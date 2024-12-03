@@ -1,0 +1,57 @@
+.page-header {position: sticky;top: 0;z-index: 99;border-bottom: 2px solid #e9e9e9;background-color: #fcfcfc}
+.header-container {display: flex;justify-content: space-between;align-items: center}
+.logo {font-weight: 500;letter-spacing: -.02em}
+.header-logo {color: #0c0c0c}
+.navigation {display: flex;align-items: center}
+.navigation-links-list {display: flex}
+.header-links-list {gap: 40px;margin-left: auto}
+.navigation-link {display: block;display: flex;flex-direction: column;gap: 2px;align-items: center;padding-block: 30px;color: var(--main);font-weight: 500;font-size: 14px;line-height: 1.29}
+.navigation-link::after {content: '';width: 8px;height: 8px;border-radius: 50%;background-color: var(--accent);opacity: 0;transition: opacity .5s ease-in-out}
+.home::after {opacity: 1;transition: opacity .5s ease-in-out}
+.navigation-link:focus::after,.navigation-link:hover::after {opacity: 1}
+.navigation-links-list:focus-within .home::after,.navigation-links-list:hover .home::after {opacity: 0}
+.navigation-link.home:focus::after,.navigation-link.home:hover::after {opacity: 1}
+.social-links-list {display: flex;gap: 10px}
+.social-link {display: flex;justify-content: center;align-items: center;width: 36px;height: 36px;border: 1px solid;border-radius: 10px;background-color: transparent;transition: background-color .5s ease-in-out}
+.header-social-link {border-color: rgba(91,91,91,.1);fill: rgba(12,12,12,.85);transition: fill .5s ease-in-out}
+.header-social-link:focus,.header-social-link:hover {border-color: #3351e910;background-color: var(--background);fill: #3350E9}
+@media screen and (max-width: 1279px) {
+.header-links-list {display: none}
+.header-social-links {display: none}
+}
+.menu-open-btn {display: flex;flex-direction: column;gap: 7px;justify-content: center;width: 34px;height: 74px;padding: 0 4px;border: none;background-color: transparent}
+.menu-open-btn::after,.menu-open-btn::before {content: '';width: 100%;height: 2.5px;border-radius: 2px;background-color: var(--main)}
+@media screen and (min-width: 768px) {
+.logo {font-size: 20px}
+.menu-open-btn {gap: 8.5px;width: 40px;height: 92px;padding: 0 5px}
+.menu-open-btn::after,.menu-open-btn::before {height: 3px}
+}
+@media screen and (min-width: 1280px) {
+.menu-open-btn {display: none}
+.header-logo {margin-right: 203px}
+}
+.modal-menu {position: fixed;top: 0;right: 0;z-index: 999;width: 200px;height: 100dvh;background-color: var(--main);background-image: linear-gradient(to bottom,rgba(12,12,12,.92),rgba(12,12,12,.92)),url(/img/modal-bg/modal-bg-mobile.jpg);background-position: center;background-size: cover;background-repeat: no-repeat;transition: transform .5s ease-in-out;transform: translateX(100%)}
+.is-open {transform: translateX(0)}
+.modal-menu-container {position: relative;display: flex;flex-direction: column;justify-content: space-between;align-items: center;width: 100%;height: 100%;margin: 0 auto;padding-block: 240px 40px}
+.modal-menu-close-btn {position: absolute;top: 20px;right: 20px;display: flex;justify-content: center;align-items: center;width: 34px;height: 34px;border: none;background-color: transparent;stroke: var(--background)}
+.modal-close-btn-icon {width: 17px;height: 17px}
+.modal-menu-nav-list {flex-direction: column;gap: 24px}
+.modal-menu-navigation-link {padding-block: 0;color: var(--background)}
+.modal-menu-social-link {border-color: rgba(251,251,251,.1);fill: var(--background);transition: fill .5s ease-in-out}
+.modal-menu-social-link:focus,.modal-menu-social-link:hover {border-color: rgba(91,91,91,.1);background-color: #fcfcfc;fill: rgba(12,12,12,.85)}
+@media only screen and (min-width: 768px) {
+.modal-menu {width: 330px;background-image: linear-gradient(to bottom,rgba(12,12,12,.92),rgba(12,12,12,.92)),url(/img/modal-bg/modal-bg-tablet.jpg)}
+.modal-menu-container {padding-block: 310px 50px}
+.modal-menu-nav-list {gap: 32px}
+.modal-menu-close-btn {top: 26px;right: 32px;width: 60px;height: 60px}
+.modal-close-btn-icon {width: 20px;height: 20px}
+}
+@media only screen and (min-width: 1280px) {
+.modal-menu {display: none}
+}
+@media (min-device-pixel-ratio: 2) {
+.modal-menu {background-image: linear-gradient(to bottom,rgba(12,12,12,.92),rgba(12,12,12,.92)),url(/img/modal-bg/modal-bg-mobile@2x.jpg)}
+@media screen and (min-width: 768px) {
+.modal-menu {background-image: linear-gradient(to bottom,rgba(12,12,12,.92),rgba(12,12,12,.92)),url(/img/modal-bg/modal-bg-tablet@2x.jpg)}
+}
+}

@@ -1,0 +1,50 @@
+<section id="contact-us">
+    <div class="contact-us-container container">
+        <h2 class="contact-us-title">Contact Us</h2>
+        <div class="contact-us-content">
+            <div class="contact-us-rectangle">
+                <p class="contact-us-text"> Please use the form below to contact us. Enter your name, email, phone, and message and we'll get back to you shortly. </p>
+                <form class="contact-us-form">
+                    <div class="form-item">
+                        <label class="form-label">
+                            <input class="form-input" name="username" placeholder="Name" required pattern="[A-Za-z0-9]{3,20}">
+                        </label>
+                    </div>
+                    <div class="form-item">
+                        <label class="form-label">
+                            <input class="form-input" id="email" name="email" placeholder="Email" required>
+                        </label>
+                    </div>
+                    <div class="form-item">
+                        <label class="form-label">
+                            <input class="form-input" id="phone" name="phone" type="tel" title="Номер телефону повинен містити 10 цифр." required pattern="[0-9]{10}" placeholder="+380">
+                        </label>
+                    </div>
+                    <div class="form-item">
+                        <label class="form-label">
+                            <textarea class="textarea" name="feedback" rows="2" placeholder="Comment"></textarea>
+                        </label>
+                    </div>
+                    <button class="btn contact-us-button" type="submit">Send</button>
+                </form>
+            </div>
+            <div class="overlay-container">
+                <picture>
+                    <source srcset="
+                        ./img/contact-us/clock-pc.jpg,
+                        ./img/contact-us/clock-pc@2x.jpg 2x
+                        " media="(min-width:1280px)">
+                    <source srcset="
+                        ./img/contact-us/clock-tab.jpg,
+                        ./img/contact-us/clock-tab@2x.jpg 2x
+                        " media="(min-width:768px)">
+                    <source srcset="
+                        ./img/contact-us/clock-mob.jpg,
+                        ./img/contact-us/clock-mob@2x.jpg 2x
+                        " media="(max-width:767px)">
+                    <img class="contact-us-img" src="/img/contact-us/clock-pc.jpg" alt="clock">
+                </picture>
+            </div>
+        </div>
+    </div>
+</section>

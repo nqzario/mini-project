@@ -1,0 +1,32 @@
+.container-reviews {display: flex;flex-direction: column;margin: auto}
+.reviews-tittle {margin-bottom: 24px;color: #0c0c0c;font-weight: 600;font-size: 32px;line-height: 1;letter-spacing: -.02em;text-align: start}
+.reviews-list {display: flex;flex-direction: column;gap: 24px}
+.reviews-list-item {display: flex;flex-direction: column;gap: 24px;align-items: center;width: 100%;height: 100%;padding: 32px 36px;border-radius: 30px;background: #f3f3f3; opacity: 1;visibility: visible;transition: 500ms ease-in-out; transition-property: scale, transform;transform: scale(1);}
+.reviews-list-item-content {display: flex;flex-direction: column;gap: 8px}
+.reviews-btn {display: block;min-width: 160px;height: 48px;margin: 40px auto 0;border: none;border-radius: 16px;background: #3350e9;color: #fbfbfb;font-weight: 500;font-size: 14px;line-height: 1.28571;text-align: center;}
+.reviews-img {display: flex;justify-content: center;overflow: hidden;width: 56px;height: 56px;border-radius: 50%}
+.reviews-img-name {color: #0c0c0c;font-weight: 500;font-size: 16px;line-height: 1.25;letter-spacing: -.02em;text-align: center}
+.reviews-img-description {color: rgba(12,12,12,.4);font-weight: 500;font-size: 14px;line-height: 1.29;letter-spacing: -.02em;text-align: center}
+.swiper-slide {width: 100%;height: 100%}
+.js-load-more {position: absolute;gap: 0;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    white-space: nowrap;opacity: 0;visibility: hidden; transform: scale(0);
+    clip-path: inset(100%);}
+@media screen and (min-width:768px) {
+.reviews-tittle {margin-bottom: 40px;font-size: 48px;line-height: .96}
+.reviews-list {flex-direction: row; flex-wrap: wrap;gap: 16px;justify-content: center;}
+.reviews-list-item {width: calc((100% - 16px) / 2);}
+.reviews-img-name {font-size: 18px;line-height: 1.1}
+.reviews-img-description {font-size: 16px;line-height: 1.25}
+}
+@media screen and (min-width:1280px) {
+.reviews-tittle {line-height: .92}
+.reviews-list {gap: 20px;}
+.reviews-list-item {width: 370px}
+}

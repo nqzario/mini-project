@@ -1,0 +1,30 @@
+.contact-us-content {display: flex;flex-direction: column;gap: 24px;box-sizing: content-box}
+.contact-us-title {margin-bottom: 24px;color: #0c0c0c;font-weight: 600;font-size: 32px;font-family: Gilroy,sans-serif;line-height: 1;letter-spacing: -.02em}
+.contact-us-text {margin-bottom: 28px;color: rgba(12,12,12,.7);font-weight: 500;font-size: 14px;font-family: Gilroy,sans-serif;line-height: 1.28571;letter-spacing: -.02em}
+.contact-us-rectangle {display: block;flex-direction: column;justify-content: center;padding: 48px 28px;border-radius: 50px;background: var(--cards)}
+.contact-us-form {border-radius: 50px}
+.contact-us-form .form-input,.contact-us-form .textarea {width: 100%;padding: 16px;border: 1px solid rgba(12,12,12,.15);border-radius: 12px;background: 0 0;outline: transparent}
+.contact-us-form .form-input {height: 52px}
+.contact-us-form .form-input:focus {border-color: var(--accent)}
+.contact-us-form .form-input::placeholder,.contact-us-form .textarea::placeholder {color: #0c0c0c;font-weight: 400;font-size: 16px;line-height: 1.25}
+.contact-us-form .textarea {resize: none;scrollbar-width: none}
+.contact-us-form .textarea:focus {border-color: var(--accent)}
+.contact-us-form .form-item {display: flex;width: 100%;margin-bottom: 18px}
+.contact-us-form .form-item:last-of-type {margin-bottom: 28px}
+.overlay-container .container {display: flex;justify-content: center;align-items: center;overflow: hidden;border-radius: 50px}
+.contact-us-img {max-width: 100%}
+.contact-us-form .form-label {display: block;width: 100%}
+.contact-us-button {min-width: 134px;height: 42px;padding: 12px 50px;border: none;cursor: pointer;transition: background-color .3s ease}
+
+@media screen and (min-width: 768px) {
+.contact-us-content {flex-direction: column}
+.contact-us-rectangle {padding: 50px 122px}
+.contact-us-title {margin-bottom: 40px;font-size: 48px;line-height: .91667}
+.contact-us-text {font-size: 16px;line-height: 1.25}
+.contact-us-form {border-radius: 50px}
+.contact-us-form .send-button {min-width: 160px;height: 52px;padding: 17px 63px;border-radius: 16px}
+}
+@media only screen and (min-width: 1280px) {
+.contact-us-content {flex-direction: row}
+.contact-us-rectangle {max-width: 580px;padding: 50px 60px}
+}

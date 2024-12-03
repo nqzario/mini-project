@@ -1,0 +1,23 @@
+.adv-container {display: flex;flex-wrap: wrap;gap: 28px;padding: 60px 28px;border-radius: 30px;background-color: #0c0c0c;background-image: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2)),url(/img/img_advertisement/adv_img_mobile@1.png);background-position: center center;background-size: cover;background-repeat: no-repeat}
+.adv-text {color: var(--main-text);font-weight: 600;font-size: 32px;line-height: 1;letter-spacing: -.02em}
+.adv-text-item {color: rgba(251,251,251,.5)}
+.adv-btn {display: block;min-width: 160px;height: 48px;padding: 15px 37px;border: 1px solid rgba(251,251,251,.15);border-radius: 16px;background-color: rgba(0,0,0,0);color: var(--main-text);transition: background-color 250ms linear}
+.adv-btn:focus,.adv-btn:hover {background-color: var(--main-text);color: #0c0c0c}
+@media only screen and (max-width: 767px) and (min-resolution: 192dpi) {
+.adv-container {background-image: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2)),url(/img/img_advertisement/adv_img_mobile@2.png)}
+}
+@media only screen and (min-width: 768px) {
+.adv-container {padding: 80px 64px;background-image: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2)),url(/img/img_advertisement/adv_img_tab@1.png)}
+.adv-text {color: var(--main-text);font-size: 48px;line-height: .92;letter-spacing: -.02em}
+}
+@media only screen and (min-width: 768px) and (max-width: 1279px) and (min-resolution: 192dpi) {
+.adv-container {background-image: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2)),url(/img/img_advertisement/adv_img_tab@2.png)}
+}
+@media only screen and (min-width: 1280px) {
+.adv-container {flex-direction: row;flex-wrap: nowrap;justify-content: space-between;padding: 83px 80px;background-image: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2)),url(/img/img_advertisement/adv_img_desk@1.png)}
+.adv-text {max-width: 690px;color: var(--main-text);line-height: .92;letter-spacing: -.02em}
+.adv-btn {display: flex;justify-content: center;align-items: center}
+}
+@media only screen and (min-width: 1280px) and (min-resolution: 192dpi) {
+.adv-container {background-image: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2)),url(/img/img_advertisement/adv_img_desk@2.png)}
+}

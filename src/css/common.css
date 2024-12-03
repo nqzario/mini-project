@@ -1,0 +1,18 @@
+html {scroll-behavior: smooth}
+body {font-family: var(--font-family)}
+.container {width: 100%;margin-right: auto;margin-left: auto;padding-right: 20px;padding-left: 20px}
+section {margin-bottom: 60px}
+.btn {display: flex;justify-content: center;align-items: center;width: fit-content;min-width: 160px;height: 48px;border: none;border-radius: 16px;background-color: var(--accent);color: var(--main-text);font-weight: 500;font-size: 14px;line-height: 1.28571;cursor: pointer;transition: background-color var(--basic-transiton)}
+.btn:focus,.btn:hover {background-color: var(--accent-hover)}
+.visually-hidden {position: absolute;overflow: hidden;clip: rect(0 0 0 0);width: 1px;height: 1px;margin: -1px;padding: 0;border: 0;white-space: nowrap;clip-path: inset(100%)}
+@media (min-width: 375px) {
+.container {width: 375px}
+}
+@media (min-width: 768px) {
+.container {width: 768px;padding-right: 32px;padding-left: 32px}
+section {margin-bottom: 80px}
+}
+@media (min-width: 1280px) {
+.container {width: 1280px;padding-right: 65px;padding-left: 65px}
+section {margin-bottom: 100px}
+}
